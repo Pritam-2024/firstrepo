@@ -3,82 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+    <title>Document</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+        .main{
+            height: 100vh;
+            background-color: aqua;
+            box-shadow: 2px 2px 2px black;
+            position: relative;
+
+
+        }
+        .nav{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .ul{
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            font-family: "Poppins", sans-serif;
+
+            /* text-decoration: none; */
+        }
+        a{
+            text-decoration: none;
+            color: white
+
+
+        }
+        .nav1{
+            font-family: "Poppins", sans-serif;
+
+            font-size: 1.5rem;
+            margin-top: 1rem;
+
+        }
+        .btn{
+            /* margin: 5px; */
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: aqua;
+            color: white;
+        }
+        .down{
+            position: absolute;
+            bottom: 20vh;
+            display: flex;
+            justify-content: space-between;
+            gap: 25rem;
+        }
+        .signupFrm{
+            margin-right: 100px;
+             margin-top: 5px;
+            background-color: azure;
+            padding-top: 3rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-bottom: 3rem;
+            box-shadow: 4px 4px 15px rgb(51, 50, 50);
+            /* box-shadow: -4px -4px 5px rgb(51, 50, 50); */
+            
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .loream{
+            margin-left: 15rem
+        }
+        .submitbtn{
+           
+        }
+        .title{
+            font-family: "Poppins", sans-serif;
+        }
+        .loream{
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+        }
+
+    </style>
 </head>
 <body>
+    <div class="main" >
+        <div class="nav" >
+            <div class="nav1" >
+                Loading
 
- 
-  <h1>CatPhotoApp</h1>
-  <div>
-    <div>
-    <h2>Cat Photos</h2>
-      <!-- TODO: Add link to cat photos -->
-      <p>Click here to view more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.</p>
-      <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+            </div>
+             <ul class="ul" >
+                <li><a href="#about">Home</a></li>
+                <li><a href="#experience">Feature</a></li>
+                <li><a href="#projects">Reviews</a></li>
+                <li><a href="#projects">Pricing</a></li>
+                <a href="#projects">FAQ</a></li>
+                <li><a href="#contact"><button class="btn" > get started</button></a></li>
+
+
+            </ul>
+
+        </div>
+
+        
+
+
+        </div>
+
+
     </div>
-    <div>
-      <h2>Cat Lists</h2>
-      <h3>Things cats love:</h3>
-      <u1>
-      </div>
+    <div  class="down" >
+        <div class="loream" >
+            <H1>Fly makes you <br> Faster</H1>
+            <p>
+               Hello everyone my name is pritam kumar
+            </p>
+            <button style="  padding-left: 15px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-right: 15px;  background-color: greenyellow;  border: none; border-radius: 15px; " >
+                See pricing
+            </button>
 
-    </div> 
-  <ul>
-    <li>Cat nip</li>
-    <li>Laser pointer</li>
-    <li>Lasagna</li>
-  </ul>
+        </div>
+        <div>
+            <div class="signupFrm">
+                <form action="" class="form">
+                  <h1 class="title">Sign Up for Free</h1>
+            
+                  <div class="inputContainer">
+                    <input style=" width: 100%; border: none;padding: 5px; background-color: rgb(223, 218, 218); border-radius: 5px; " type="text" class="input" placeholder="Full name">
+                    <label for="" class="label"></label>
+                  </div>
+            
+                  <div class="inputContainer">
+                    <input  style="width: 100%; border: none;padding: 5px; background-color: rgb(223, 218, 218); border-radius: 5px; " type="text" class="input" placeholder="Email">
+                    <label for="" class="label"></label>
+                  </div>
+            
+                  <div class="inputContainer">
+                    <input style=" width: 100%; border: none;padding: 5px; background-color: rgb(223, 218, 218); border-radius: 5px; " type="text" class="input" placeholder="Email">
+                    <label for="" class="label"></label>
+                  </div>
+            
+                  <div class="inputContainer">
+                    <!-- <input type="text" class="input" placeholder="s"> -->
+                    <label  for="" class="label"></label>
+                    <select style=" width: 100%; border: none;padding: 5px; background-color: rgb(223, 218, 218); border-radius: 5px; " >
+                        <option value="">Type</option>
+                    </select>
+                  </div>
+            
+                  <input style=" width: 10%; 
+                  background-color: skyblue; 
+                  border: none; padding: 5px;  border-radius: 15px;"  type="submit" class="submitBtn" value="Register">
+                </form>
+              </div>
+            
+    </div>
 
-  <div   style="margin-left: 5%;" >
-    <img   src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"  >
-    <p style="margin-top: 0px;" >Cats <i>love </i>Lasagna</p>
-  </div>
 
-  <h2>Top 3 things cats hate:</h2>
-  <ol>
-    <li>Flea treatment</li>
-    <li>Thunder</li>
-    <li>Other cats</li>
-  </ol>
-  <div   style="margin-left: 5%;" >
-    <img   src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"  >
-    <p style="margin-top: 0px;" >Cats <strong>hate </strong> other cats</p>
-  </div>
-  <h2>
-    Cat Form
-  </h2>
-  <fieldset style="margin-bottom: 10px;">
-    <legend>Is your cat an indoor or outdoor cat?</legend>
 
-     <div style="display: flex; margin-top: 10px; " >
-        <input style="margin-right: 10px;" type="radio" id="kraken" name="monster" value="K" />
-        <label style="margin-right: 10px; " for="kraken">Indoor</label><br />
+
     
-        <input style="margin-right: 10px; "  type="radio" id="sasquatch" name="monster" value="S" />
-        <label for="sasquatch">Outdoor</label><br />
-     </div>
-
-  </fieldset>
-
-  <fieldset style="margin-bottom: 10px;">
-    <legend>Whats your cat personality?</legend>
-
-     <div style="display: flex; margin-top: 10px;" >
-        <input type="checkbox" id="kraken" name="monster" value="K" />
-        <label for="kraken">Loving</label><br />
-    
-        <input type="checkbox" id="sasquatch" name="monster" value="S" />
-        <label for="sasquatch">Lazy</label><br />
-
-        <input type="checkbox" id="sasquatch" name="monster" value="S" />
-        <label for="sasquatch">Energetic</label><br />
-     </div>
-
-  </fieldset>
-  <input type="text" id="sasquatch" name="monster" placeholder="cat photo url" />
-  <input type="submit" id="sasquatch" name="monster" value="Submit" />
-
-  <p>No Copyright - <a href="freecodecamp.org" >freecodecamp.org</a></p>
- 
 </body>
 </html>
