@@ -1,4 +1,148 @@
 body{
-    background-color: aqua;
-    font-size: 35px;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.container{
+    background-image: linear-gradient(225deg, rgb(21, 21, 240),rgb(178, 15, 211));
+    width: 100%;
+    height: 100vh;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;/*used to set the main axis */
+    justify-content: space-around;/*used to set arrangement of elements in main axis*/
+    align-items: center;
+    height: 10vh;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    
+}
+.nav-list button{
+    background-color: rgb(224, 64, 15);
+    border: 1px solid rgb(224, 88, 35);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 15px;
+    transition: border 0.2s, background-color 0.2s;
+
+}
+.nav-list button:hover{
+    background-color: rgb(133, 7, 7);
+    cursor: pointer;
+    border: 2px rgb(133, 7, 7);
+   
+
+}
+.nav-bar a{
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+}
+.nav-list a{
+    margin-right: 25px;
+    
+}
+.rest-of-page{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 75vh;
+    align-items: center;
+  
+    
+}
+.left,.right{
+    
+    
+    text-align: center;
+    width: 500px;
+    margin-left: 50px;
+    
+}
+.left{
+    padding-left: 10%;
+    /* margin-right: 100px; */
+    margin-left: 200px;
+    text-align: left;
+    color: white;
+    width: 400px;
+}
+.left button{
+    background-color: rgb(18, 235, 36);
+    color: white;
+    width: 170px;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s, ;
+}
+.left button:hover{
+    cursor: pointer;
+    background-color: rgb(20, 158, 20);
+    /* box-shadow: 0px 0px 10px rgb(0, 0, 0); */
+    
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 350px;
+    height: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 200px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.right input{
+    width: 90%;
+    margin-bottom: 20px;
+    height: 30px;
+    border: 1px solid rgb(204, 200, 200);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(226, 235, 235);
+    
+}
+.right select,.right button{
+    width: 90%;
+    margin-bottom: 20px;
+    height: 34px;
+    padding: 3px 5px;
+    border: none;
+    background-color: rgb(250, 249, 247);
+}
+.right button{
+    background-color: rgb(11, 11, 82);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    transition: border-radius 0.5s , background-color 0.3s, transform 0.3s;
+    padding:10px;
+    width: 80%;
+}
+.right button:hover{
+    background-color: rgb(23, 23, 143);
+    cursor: pointer;
+    color: white;
+    border: none;
+    transform:scale(1.05);
+   
+}
+
+.foot-div{
+    width: 110%;
+    height:20vh;
+    background-color:white;
+    transform: rotate(-1.5deg) translateY(-60px);
+    box-shadow: -2px -2px 10px rgb(77, 75, 75);
 }
